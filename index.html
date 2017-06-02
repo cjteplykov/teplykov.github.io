@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/Gal.ico">
+</head>
+<body>
+<div class="shapka">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="text-white margin-btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/Galstuk.jpg" width="60" height="auto" class="d-inline-block align-top rounded-circle" alt=""></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white font-text" href="#">Иван Тепляков</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav otstup nav1">
+                        <a class=" nav-link text-white men" href="#yak1">обо мне</a>
+                        <a class=" nav-link text-white men" href="#yak3">контакты</a>
+                    <a class="text-white" data-toggle="modal" data-target="#exampleModalLong" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Всплывающая форма-->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-white backColor1">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Связаться</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <p>Вы можете мне написать.</p>
+                        </div>
+                        <form method="POST" action="https://formspree.io/mpeg_4@bk.ru" id="contactForm">
+                                <div class="form-group">
+                                    <label for="user_name">Имя</label>
+                                    <input class="form-control" type="text" placeholder="Василий" id="user_name" name="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_email">Почта</label>
+                                    <input class="form-control" type="email" placeholder="test@mailbox.com" id="user_email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="text_comment">Сообщение</label>
+                                    <textarea class="form-control" placeholder="Привет я Василий …" id="text_comment" name="message"></textarea>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-secondary bt-collor1">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Всплывающая форма-->
+    <div class="container text-center nav2">
+            <img src="img/logo.jpg" class="rounded-circle circul" alt="">
+        <div class="glavnay">
+            <h1>Портфолио</h1>
+            <h2>Хочу представить вашему вниманию мои работы</h2>
+        </div>
+        <a href="#yak2"><button type="button" class="btn btn-secondary btn-lg bt-collor">Посмотрим?</button></a>
+    </div>
+</div>
+<div id="yak1" class="container margin-about">
+    <h2 class="display-5 py-4 text-center backColor1 text-white">Обо мне</h2>
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-6 col-md-4 col-lg-3 backColor">
+                <img class="d-flex align-self-start mr-3" src="img/Logo App.jpg" width="200" height="auto" alt="Generic placeholder image">
+            </div>
+            <div class=" col-sm-6 col-md-8 col-lg-9 text-muted backColor">
+                <br>
+                <h5 class="mt-0 ">Немного о себе</h5>
+                <p>Занимаюсь дизайном около четырёх лет, знаю такие программы как Adobe Photoshop, Adobe Illustrator, Adobe Premiere, CorelDRAW и ещё несколько графических программ.
+                </p>
+                <p> Ещё занимаюсь веб дизайном, разрабатываю одностраничные сайты и анимацию.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="yak2" class="container">
+    <h2 class="display-5 py-4 mt-4 text-center backColor1 text-white">Мои работы</h2>  <!-- Навигация по моим работам -->
+    <nav class="nav justify-content-center nav-pills flex-column flex-md-row backColor2">
+        <a class="nav-link active btn-lg" href="#ninja" data-toggle="tab">Работы</a>
+        <a class="nav-link btn-lg format" href="#avenger" data-toggle="tab">Анимация</a>
+    </nav>
+
+    <div class="tab-content py-5 backColor text-muted">
+        <div class="tab-pane active" id="ninja">
+            <h4 class="text-center">Тут представлены все мои работы</h4>
+            <br>
+            <div class="container">
+                <div class="clearfix mosaicflow">
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/1.jpg">
+                            <img src="img/1.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/2.jpg">
+                            <img src="img/2.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/9.jpg">
+                            <img src="img/9.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                            <a class="fancyimage" rel="group" href="img/10.jpg">
+                                <img src="img/10.jpg" />
+                            </a>
+                        </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/3.jpg">
+                            <img src="img/3.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/11.jpg">
+                            <img src="img/11.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/5.jpg">
+                            <img src="img/5.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/8.jpg">
+                            <img src="img/8.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/4.jpg">
+                            <img src="img/4.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/7.jpg">
+                            <img src="img/7.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/6.jpg">
+                            <img src="img/6.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/12.jpg">
+                            <img src="img/12.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/13.jpg">
+                            <img src="img/13.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/14.jpg">
+                            <img src="img/14.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/15.jpg">
+                            <img src="img/15.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/16.jpg">
+                            <img src="img/16.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/17.jpg">
+                            <img src="img/17.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/18.jpg">
+                            <img src="img/18.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/19.jpg">
+                            <img src="img/19.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/20.jpg">
+                            <img src="img/20.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/21.jpg">
+                            <img src="img/21.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/22.jpg">
+                            <img src="img/22.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/23.jpg">
+                            <img src="img/23.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/24.jpg">
+                            <img src="img/24.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/25.jpg">
+                            <img src="img/25.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/26.jpg">
+                            <img src="img/26.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/27.jpg">
+                            <img src="img/27.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/28.jpg">
+                            <img src="img/28.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/29.jpg">
+                            <img src="img/29.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/30.jpg">
+                            <img src="img/30.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/31.jpg">
+                            <img src="img/31.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/32.jpg">
+                            <img src="img/32.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/33.jpg">
+                            <img src="img/33.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/34.jpg">
+                            <img src="img/34.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/35.jpg">
+                            <img src="img/35.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/36.jpg">
+                            <img src="img/36.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/37.jpg">
+                            <img src="img/37.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/38.jpg">
+                            <img src="img/38.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/39.jpg">
+                            <img src="img/39.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/40.jpg">
+                            <img src="img/40.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/41.jpg">
+                            <img src="img/41.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/42.jpg">
+                            <img src="img/42.jpg" />
+                        </a>
+                    </div>
+
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/44.jpg">
+                            <img src="img/44.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/45.jpg">
+                            <img src="img/45.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/46.jpg">
+                            <img src="img/46.jpg" />
+                        </a>
+                    </div>
+                    <div class="mosaicflow__item">
+                        <a class="fancyimage" rel="group" href="img/47.jpg">
+                            <img src="img/47.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="avenger">
+            <h4 class="text-center">Немного анимации</h4>
+            <div class="container">
+                <p class="text-center">Эта анимация была создана при помощи таких программ как Anime Studio и Adobe Premiere</p>
+                <div class="row video-center">
+                    <video controls="controls" poster="img/video-img.jpg">
+                        <source src="video/tictonic.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <a href="video/tictonic.mp4">Скачайте видео</a>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end .container -->
+<div class="container">
+    <div class="contact">
+            <h2 id="yak3" class="text-center backColor1 text-white display-5 py-4 mt-4">Контакты</h2>
+        <div class="backColor text-muted text-center">
+            <br>
+            <p>Тел: +7(950)051-63-37</p>
+            <p>Почта: mpeg_4@bk.ru</p>
+            <br>
+        </div>
+    </div>
+</div>
+<br>
+<div class="footer">
+    <br>
+    <br>
+    <div class="container text-muted">
+        <div class="row">
+        <div class="col-sm-6 text-center">
+            <p>Все права защищены &copy; 2017</p>
+            <p>Разработка и дизайн: Тепляков Иван</p>
+        </div>
+        <div class="col-sm-6 text-center social">
+            <p>Социальные сети: <a href="https://vk.com/cjteplykov" title="Группа Вк"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com" title="Группа FaceBook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/IvanTeplykov"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </p>
+            <hr>
+        </div>
+        </div>
+    </div>
+    <br>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="jquery/jquery-1.11.2.min.js"></script>
+<script src="jmosaicflow/jquery.mosaicflow.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("a.fancyimage").fancybox();
+    });
+    $(document).ready(function () {
+        $(".nav1,.nav2").on("click", "a", function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 200);
+        });
+    });
+</script>
+</body>
+</html>
